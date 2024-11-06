@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de maioridade</title>
+</head>
+<body>
+    <h1>Validação de maioridade</h1>
+    <!-- Criado um formulário com a ação de ativar a função validar-->
+    <form onsubmit="validar(event)">
+        <!-- foi comentado o campo label pois o professor explicou sobre economizar espaço usando o place holder conforme abaixo-->
+        <!--<label for="cnome">Nome:</label>-->
+        <input type="text" name="nome" id="cnome" placeholder="Nome" required>
+        <br>
+        <input type="number" name="" id="cidade" placeholder="Idade" required>
+        <button>Validar</button>
+        <p>
+            <input type="text" name="" id="caluno" readonly>
+            <br>
+            <input type="text" name="" id="cstatus" readonly>
+        </p>
+
+        <button type="reset">Limpar</button>
+    </form>
+
+
+    <!-- Vinculo do script criado, colocar no final da pagina para que o html carregue completamente-->
+    <script src="app.js"></script>
+</body>
+</html>
